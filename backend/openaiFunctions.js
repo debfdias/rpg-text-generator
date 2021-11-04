@@ -6,11 +6,11 @@ var fs = require('fs');
 import { readFileSync } from "fs";
 import { json } from "express";
 import config from "dotenv";
-import post from "got";
+import got from "got";
 
 export class GPTFunctions {
     // API parameters
-    _maxTokens = 200;
+    _maxTokens = 100;
     _temp = 0.7;
     _freqPenalty = 0.4;
     _url = 'https://api.openai.com/v1/engines/davinci/completions';
@@ -27,17 +27,17 @@ export class GPTFunctions {
             "prompt": prompt,
             "max_tokens": this._maxTokens,
             "temperature": this._temp,
-            "frequency_penalty": this._freqPenalty
+            "frequency_penalty": this._freqPenalty,
+            "presence_penalty": 0.6
         };
         const headers = {
             'Authorization': `Bearer ${process.env.SECRET_API_KEY}`,
         };
     
         var result = "";
-    
         try {
-            const response = await post(this._url, { json: params, headers: headers }).json();
-            var output = `${prompt}${response.choices[0].text}`;
+            const response  = await got.post(this._url, { json: params, headers: headers }).json();
+            var output = `${prompt} `+'<br/><br/> this is the generated text: <br/><br/>' +  `${response.choices[0].text}`;
             console.log(output);
             result = output;
         } catch (err) {
@@ -49,7 +49,7 @@ export class GPTFunctions {
 
     async generateOriginalCharacter(){
         const input = await readFileSync("./inputModels/originalCharacters.txt", 'utf-8');
-        //var result = await this.sendGPTRequest(input);
+        //var result = this.sendGPTRequest(input);
         var result = input;
         return result;
     }

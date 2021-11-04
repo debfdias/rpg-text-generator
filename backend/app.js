@@ -19,11 +19,18 @@ const gpt = new GPTFunctions(200, 0.7, 0.4);
 
 // Returns an original character
 app.get('/originalCharacter', (req, res) => {
+    //getting the prompt from a file in the server.
     var result = gpt.generateOriginalCharacter()
-    .then((result) => res.send(result));
-});
+    .then((result) => {
 
-//app.get('/originalCharacter', gpt.generateOriginalCharacter())
+        //sending the prompt to openAI, then showing it in the screen
+        var newPrompt = gpt.sendGPTRequest(result)
+        .then((newPrompt) =>{
+            res.send(newPrompt)
+        })
+        
+    });
+});
 
 
 app.listen(port, () => console.log(`Backend listening on port ${port}!`));
