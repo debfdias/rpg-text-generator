@@ -1,27 +1,14 @@
-import React, { useState, useEffect } from "react";
-import geralt from './assets/geralt.png';
-
-import "./styles.css";
-
-import api from "./services/api";
+import { DataList } from './components/DataList';
+import { GenerateForm } from './components/GenerateForm';
 
 function App() {
 
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    //retrieve data from API
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={geralt} className="App-logo" alt="logo" />
-        <h1>
-        Projeto Criatividade Computacional
-        </h1>
-      </header>
-    </div>
+    <main className="contentWrapper">
+      <DataList/>
+      <GenerateForm/>
+    </main>
+
   );
 }
 
