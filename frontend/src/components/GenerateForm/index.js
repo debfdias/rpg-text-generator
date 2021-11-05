@@ -1,48 +1,92 @@
 import { useState, FormEvent } from 'react';
+import { GiOpenChest } from "react-icons/gi";
+import Slider from "@material-ui/core/Slider";
+import { makeStyles } from '@mui/styles';
 import { api } from '../../services/api';
 
 import lamp from '../../assets/logo.png';
 import "./styles.css";
 
+const useStyles = makeStyles({
+  sliderColor: {
+    color: '#23BF57'
+  }
+});
+
 export function GenerateForm()
 {
-	const [parameter, setParameter] = useState('');
+  const classes = useStyles();
+
+	const [parameters, setParameters] = useState([0, 0, 0]);
 
 	async function handleGenerate(FormEvent) {
     FormEvent.preventDefault();
 
-    if (!parameter.trim()) {
-      return;
-    }
-
     //CALL API POST
 
-    setParameter('');
+    console.log("parameters values: ", parameters)
+
+    setParameters([0,0,0]);
   }
 
-	return(
-		<div className="generateFormWrapper">
+  const loadSliders = () => {
+    const sliders = [];
+    var minValue=0;
+    var maxValue=1;
+    var stepValue=0.01;
+    var parameterName = ["Temperature", "Freq penalty", "Max tokens"];
 
-			<header className="topInformation">
+    parameters.forEach((parameter, index) => {
+      if(index === (parameters.length - 1))
+      {
+        minValue=0;
+        maxValue=100;
+        stepValue=1;
+      }
+
+      sliders.push(
+        <>
+          <div className="parameterName">{parameterName[index]}</div>
+          <Slider
+            className={classes.sliderColor}
+            key={index}
+            value={parameters[index]}
+            min={minValue}
+            max={maxValue}
+            step={stepValue}
+            valueLabelDisplay="auto"
+            onChange={(event, newValue) => {
+              parameters[index] = newValue;
+              const newRatings = [...parameters];
+              setParameters(newRatings);
+            }}
+          />
+          </>
+
+        )
+      });
+      return sliders;
+    }
+
+    return(
+      <div className="generateFormWrapper">
+
+        <header className="topInformation">
         <div className="lampImage">
-          <img src={lamp} className="lampLogo" />
+          <GiOpenChest className="lampLogo" />
         </div>
-      </header>
+        </header>
 
-      <form onSubmit={handleGenerate} className="generateTextForm">
-        <label htmlFor="message">Text generator</label>
+        <form onSubmit={handleGenerate} className="generateTextForm">
+          <label htmlFor="message">Text generator</label>
 
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Type a parameter."
-          onChange={event => setParameter(event.target.value)}
-          value={parameter}
-        />
+          <div className="wrapperParameter" >
+            {loadSliders()}
+          </div>
 
-        <button className="button" type="submit">Generate</button>
-      </form>
+          <button className="button" type="submit">Generate</button>
+        </form>
 
-		</div>
-	)
-}
+      </div>
+    )
+  }
