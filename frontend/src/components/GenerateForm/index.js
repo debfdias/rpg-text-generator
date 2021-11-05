@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { GiOpenChest } from "react-icons/gi";
-import Slider from "@material-ui/core/Slider";
+import Slider from '@mui/material/Slider';
 import { makeStyles } from '@mui/styles';
 import { api } from '../../services/api';
 
@@ -50,6 +50,7 @@ export function GenerateForm()
           <Slider
             className={classes.sliderColor}
             key={index}
+            size="small"
             value={parameters[index]}
             min={minValue}
             max={maxValue}
