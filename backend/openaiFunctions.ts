@@ -5,8 +5,10 @@ var fs = require('fs');
 */
 import { readFileSync } from "fs";
 import { json } from "express";
-import config from "dotenv";
+import dotenv from "dotenv";
 import got from "got";
+
+dotenv.config();
 
 export class GPTFunctions {
     // API parameters
