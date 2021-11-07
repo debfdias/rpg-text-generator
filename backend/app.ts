@@ -1,10 +1,13 @@
-import { GPTFunctions } from './openaiFunctions.js';
+import { GPTFunctions } from './openaiFunctions';
 
-import express from 'express';
+import express from "express";
+import cors from "cors";
+import OriginalCharacterDataType from "../middleware/OriginalCharacterDataType";
 
 const app = express();
 const port = 8080;
 
+app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!'));
 
 
@@ -15,11 +18,14 @@ GET OriginalCharacter
 GET semiOriginalCharacter
 */
 
-const gpt = new GPTFunctions(200, 0.7, 0.4);
+
 
 // Returns an original character
 app.get('/originalCharacter', (req, res) => {
-    //getting the prompt from a file in the server.
+    let data: OriginalCharacterDataType = <OriginalCharacterDataType><unknown>req.query;
+    let gpt = new GPTFunctions(data.maxTokens, data.temp, data.freqPenalty);
+    
+
     var result = gpt.generateOriginalCharacter()
     .then((result) => {
 

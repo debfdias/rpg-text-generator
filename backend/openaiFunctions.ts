@@ -16,7 +16,7 @@ export class GPTFunctions {
     _url = 'https://api.openai.com/v1/engines/davinci/completions';
     
     
-    GPTFunctions(maxTokens, temp, freqPenalty){
+    constructor(maxTokens: number, temp: number, freqPenalty: number){
         this._maxTokens = maxTokens;
         this._temp = temp;
         this._freqPenalty = freqPenalty;
@@ -36,7 +36,7 @@ export class GPTFunctions {
     
         var result = "";
         try {
-            const response  = await got.post(this._url, { json: params, headers: headers }).json();
+            const response  = await got.post(this._url, { json: params, headers: headers }).json<any>();
             var output = `${prompt} `+'<br/><br/> this is the generated text: <br/><br/>' +  `${response.choices[0].text}`;
             console.log(output);
             result = output;

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { api } from '../../services/api'
 
 import "./styles.css";
 
@@ -19,7 +18,7 @@ export function DataList()
 			<ul className="dataList">
 				<h1 className="headerText"> Last generated texts:</h1>
 
-				<div class="gradBorder">
+				<div className="gradBorder">
 					<li className="dataCard">
 						<p className="dataContent"> It is a long established fact that a reader will be 
 						distracted by the readable content of a page when looking at its layout. 
@@ -35,7 +34,7 @@ export function DataList()
 					</li>
 				</div>
 
-				<div class="gradBorder">
+				<div className="gradBorder">
 					<li className="dataCard">
 						<p className="dataContent"> There are many variations of passages of Lorem Ipsum 
 						available, but the majority have suffered alteration in some form, 
@@ -52,7 +51,7 @@ export function DataList()
 					</li>
 				</div>
 
-				<div class="gradBorder">
+				<div className="gradBorder">
 					<li className="dataCard">
 						<p className="dataContent"> Contrary to popular belief, Lorem Ipsum is not simply 
 						random text. It has roots in a piece of classical Latin literature from 45 BC, 
