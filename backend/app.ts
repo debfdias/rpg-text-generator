@@ -25,17 +25,11 @@ app.get('/originalCharacter', (req, res) => {
     let data: OriginalCharacterDataType = <OriginalCharacterDataType><unknown>req.query;
     let gpt = new GPTFunctions(data.maxTokens, data.temp, data.freqPenalty);
     
-
     var result = gpt.generateOriginalCharacter()
     .then((result) => {
-
-        //sending the prompt to openAI, then showing it in the screen
-        var newPrompt = gpt.sendGPTRequest(result)
-        .then((newPrompt) =>{
-            res.send(newPrompt)
-        })
-        
+        res.send(result)
     });
+
 });
 
 

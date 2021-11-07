@@ -51,9 +51,16 @@ export class GPTFunctions {
 
     async generateOriginalCharacter(){
         const input = await readFileSync("./inputModels/originalCharacters.txt", 'utf-8');
-        //var result = this.sendGPTRequest(input);
-        var result = input;
-        return result;
+        
+        var response = "";
+        
+        // Sending the request to openai
+        var result = await this.sendGPTRequest(input)
+        .then((result) => {
+            response = result
+            console.log(response);
+            return response;
+        });
     }
 
     setMaxTokens (newMax){
