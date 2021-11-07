@@ -41,7 +41,7 @@ export class GPTFunctions {
             const response  = await got.post(this._url, { json: params, headers: headers }).json<any>();
             var output = `${prompt} `+'<br/><br/> this is the generated text: <br/><br/>' +  `${response.choices[0].text}`;
             console.log(output);
-            result = output;
+            result = response.choices[0].text;
         } catch (err) {
             console.log(err);
         }
@@ -55,12 +55,9 @@ export class GPTFunctions {
         var response = "";
         
         // Sending the request to openai
-        var result = await this.sendGPTRequest(input)
-        .then((result) => {
-            response = result
-            console.log(response);
-            return response;
-        });
+        response = await this.sendGPTRequest(input);
+        console.log(response);
+        return response;
     }
 
     setMaxTokens (newMax){

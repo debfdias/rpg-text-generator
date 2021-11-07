@@ -7,39 +7,71 @@ import "./styles.css";
 import axios from 'axios';
 import OriginalCharacterDataType from '../../OriginalCharacterDataType';
 
+import SliderPropertyDefinition, { ValueType } from './sliderPropertyDefinition';
+
 const useStyles = makeStyles({
   sliderColor: {
     color: '#23BF57'
   }
 });
 
-var parameterName = ["Temperature", "Freq penalty", "Max tokens"];
+function ResetParams(params: SliderPropertyDefinition[]) {
+  params.forEach(param => {
+    param.value = param.minValue;
+  });
+}
 
-export function GenerateForm()
-{
+
+
+
+export function GenerateForm() {
   const classes = useStyles();
 
-	const [parameters, setParameters] = useState([0, 0, 0]);
+  const [params, setParameters]: [SliderPropertyDefinition[], any] = useState([
+    {
+      minValue: 0.1,
+      maxValue: 1,
+      stepValue: 0.1,
+      name: "Temperature",
+      type: ValueType.Temperature,
+      value: 0
+    },
+    {
+      minValue: 0.1,
+      maxValue: 1,
+      stepValue: 0.1,
+      name: "Freq penalty",
+      type: ValueType.FrequencyPenalty,
+      value: 0
+    },
+    {
+      minValue: 100,
+      maxValue: 300,
+      stepValue: 10,
+      name: "Max Tokens",
+      type: ValueType.MaxToken,
+      value: 100
+    },
+  ]);
 
-	async function handleGenerate(FormEvent: { preventDefault: () => void; }) {
+  async function handleGenerate(FormEvent: { preventDefault: () => void; }) {
     FormEvent.preventDefault();
 
-
     var data = new OriginalCharacterDataType();
-    
-    parameterName.forEach((name, index) => {
-      switch(name) {
-        case "Temperature":
-          data.temp = parameters[index];
+
+    params.forEach((param) => {
+      switch (param.type) {
+        case ValueType.Temperature:
+          data.temp = param.value;
           break;
-        case "Freq penalty":
-          data.freqPenalty = parameters[index];
+        case ValueType.FrequencyPenalty:
+          data.freqPenalty = param.value;
           break;
-        case "Max tokens":
-          data.maxTokens = parameters[index];
+        case ValueType.MaxToken:
+          data.maxTokens = param.value;
           break;
         default:
-          console.error(`Parameter ${name} not found`);
+          console.error(`Parameter ${param.name} not found`);
           return;
       }
     });
@@ -53,69 +85,60 @@ export function GenerateForm()
       console.log("ANSWER");
       console.log(res.data);
     }).catch(err => console.log(err))
-    console.log("parameters values: ", parameters)
+    console.log("parameters values: ");
+    params.forEach(param => console.log(param.name + ": " + param.value));
 
-    setParameters([0,0,0]);
+    ResetParams(params);
   }
 
   const loadSliders = () => {
     const sliders: JSX.Element[] = [];
-    var minValue=0;
-    var maxValue=1;
-    var stepValue=0.01;
 
-    parameters.forEach((parameter, index) => {
-      if(index === (parameters.length - 1))
-      {
-        minValue=0;
-        maxValue=100;
-        stepValue=1;
-      }
-
+    params.forEach((parameter, index) => {
       sliders.push(
         <>
-          <div className="parameterName">{parameterName[index]}</div>
+          <div className="parameterName">{parameter.name}</div>
           <Slider
             className={classes.sliderColor}
             key={index}
             size="small"
-            value={parameters[index]}
-            min={minValue}
-            max={maxValue}
-            step={stepValue}
+            value={parameter.value}
+            min={parameter.minValue}
+            max={parameter.maxValue}
+            step={parameter.stepValue}
             valueLabelDisplay="auto"
             onChange={(event, newValue) => {
-              parameters[index] = newValue as number;
-              const newRatings = [...parameters];
+              parameter.value = newValue as number;
+              const newRatings = [...params];
               setParameters(newRatings);
             }}
           />
-          </>
+        </>
 
-        )
-      });
-      return sliders;
-    }
+      )
+    });
+    return sliders;
+  }
 
-    return(
-      <div className="generateFormWrapper">
+  return (
+    <div className="generateFormWrapper">
 
-        <header className="topInformation">
+      <header className="topInformation">
         <div className="lampImage">
           <GiOpenChest className="lampLogo" />
         </div>
-        </header>
+      </header>
 
-        <form onSubmit={handleGenerate} className="generateTextForm">
-          <label htmlFor="message">Text generator</label>
+      <form onSubmit={handleGenerate} className="generateTextForm">
+        <label htmlFor="message">Text generator</label>
 
-          <div className="wrapperParameter" >
-            {loadSliders()}
-          </div>
+        <div className="wrapperParameter" >
+          {loadSliders()}
+        </div>
 
-          <button className="button" type="submit">Generate</button>
-        </form>
+        <button className="button" type="submit">Generate</button>
+      </form>
 
-      </div>
-    )
-  }
+    </div>
+  )
+}
