@@ -23,7 +23,7 @@ GET semiOriginalCharacter
 // Returns an original character
 app.get('/originalCharacter', (req, res) => {
     let data: OriginalCharacterDataType = <OriginalCharacterDataType><unknown>req.query;
-    let gpt = new GPTFunctions(data.maxTokens, data.temp, data.freqPenalty);
+    let gpt = new GPTFunctions(Number(data.maxTokens), Number(data.temp), Number(data.freqPenalty));
     
 
     var result = gpt.generateOriginalCharacter()
