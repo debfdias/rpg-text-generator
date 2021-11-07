@@ -1,0 +1,38 @@
+RPG characters of the genre "High Fantasy".
+
+1.
+Name: Xerather
+Race: Orc
+Class: Ice mage
+Preferred Weapon: Small Wand
+Background: Orc mages are really uncommon, but being an ice mage has always been xerather dream. He ran off his village to go to the mage college in WinterHelm, where he studied under Elsa, the highest authority in ice magic alive. He suffered a lot of bullying there because of his appearence, but he was able to prove his worth and wits after each test.
+
+2.
+Name: Alpeco
+Race: Halfling
+Class: Tinkerer
+Preferred Weapon: wrench
+Background: Alpeco is a strange halfling that became obssessed with machines. He is always looking through dumpsters for spare parts for the giant mecha hes building. He's a master of steam automatons creation. Because of his eccentricity, he doesn't have any friends. This doesn't bother him though, because he thinks he has all the friends he needs in his inventions.
+
+3.
+Name: Annika
+Race: Half-elf
+Class: Necromancer
+Preferred Weapon: Longsword
+Background: Annika didn't know her parents, she was found by a group of traveling adventurers that took her in. They taught her the good and bad sides of adventuring, but they died in a dungeon when Annika was only 11. Since the curse of undeath hadn't been discovered back then, she couldn't raise them from the dead. She decided to study necromancy at the mage college in order to be able to bring them back. She also wanted to get revenge on whatever killed them.
+
+4.
+Name: Falsis
+Race: Half-elf
+Class: Ranger
+Preferred Weapon: Bow
+Background: Falsis is the daughter of a rich merchant. She was never interested in his business, so she left home at 15 to become an adventurer. She always wanted to explore the world, and thought that it would be easier to do that with money than without it. She never found out that her father was murdered by bandits when she was 18, because she had already ran off for another adventure by then.
+
+5.
+Name: Sophia
+Race: Human
+Class: Witchblade
+Preferred Weapon: Sword
+Background: Sophia grew up in a noble family in WinterHelm. She was always in trouble with the law for stealing, and she grew tired of living in the same house every year. She decided to join an adventuring group so she could see the outside world for once, but she ran off from them at the first town they stopped at. She wasn't interested in their quest, so she decided to get money by robbing people.
+
+6.
