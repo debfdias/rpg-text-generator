@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Ppp from './Ppp';
 
 import "./styles.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Ppp />
   </React.StrictMode>,
   document.getElementById('root')
 );
