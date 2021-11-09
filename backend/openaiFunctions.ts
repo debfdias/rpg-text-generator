@@ -39,8 +39,6 @@ export class GPTFunctions {
         var result = "";
         try {
             const response  = await got.post(this._url, { json: params, headers: headers }).json<any>();
-            var output = `${prompt} `+'<br/><br/> this is the generated text: <br/><br/>' +  `${response.choices[0].text}`;
-            console.log(output);
             result = response.choices[0].text;
         } catch (err) {
             console.log(err);
@@ -50,8 +48,8 @@ export class GPTFunctions {
     }
 
     async generateOriginalCharacter(){
-        const input = await readFileSync("./inputModels/dndModels.txt", 'utf-8');
-        
+        const input = await readFileSync("./inputModels/dndmodels.txt", 'utf-8');
+        console.log(input)
         var response = "";
         
         // Sending the request to openai
