@@ -50,7 +50,7 @@ export class GPTFunctions {
     }
 
     async generateOriginalCharacter(){
-        const input = await readFileSync("./inputModels/originalCharacters.txt", 'utf-8');
+        const input = await readFileSync("./inputModels/dndModels.txt", 'utf-8');
         
         var response = "";
         
