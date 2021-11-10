@@ -8,12 +8,12 @@ Level: 3
 Preferred Weapon: Small Wand
 
 Status
-Strength: 1
-Dexterity: 1
-Constitution: 3
-Intelligence: 5
-Wisdom: 5
-Charisma: 3
+Strength: 11
+Dexterity: 11
+Constitution: 13
+Intelligence: 15
+Wisdom: 15
+Charisma: 13
 
 Personality
 Alignment: Chaotic good
@@ -243,4 +243,6 @@ Flaws: I am suspicious of strangers and suspect the worst of them.
 Features & traits: Honest, skinny
 Proficiencies and languages: Human language, Animal language
 
-Background: Born in a hole between a tavern and a sewer, was left on the trash and grew up accompanied by the lowly vermin of big cities like rats and possums. Because of her childhood in the sewers, she can see very well in the dark and talk to animals. When afflicted with poison, she is able to turn herself into a beast that is able to shoot the poise through her nails. 
+Background: Born in a hole between a tavern and a sewer, was left on the trash and grew up accompanied by the lowly vermin of big cities like rats and possums. Because of her childhood in the sewers, she can see very well in the dark and talk to animals. When afflicted with poison, she is able to turn herself into a beast that is able to shoot the poise through her nails.
+
+11.

@@ -1,0 +1,126 @@
+Dungeons and Dragons characters of the genre "High Fantasy".
+
+1.
+Name: Xerather
+Race: Orc
+Class: Ice mage
+Level: 3
+Preferred Weapon: Small Wand
+
+Status
+Strength: 11
+Dexterity: 11
+Constitution: 13
+Intelligence: 15
+Wisdom: 15
+Charisma: 13
+
+Personality
+Alignment: Chaotic good
+Ideals: Tradition, Self-Improvement
+Flaws: Ingenuity
+Features & traits: High intelligent, but not very sociable
+Proficiencies and languages: Human language, orc language.
+
+Background:
+Orc mages are really uncommon, but being an ice mage has always been xerather dream. He ran off his village to go to the mage college in WinterHelm, where he studied under Elsa, the highest authority in ice magic alive. He suffered a lot of bullying there because of his appearance, but he was able to prove his worth and wits after each test.
+
+2.
+Name: Harold
+Race: Human
+Class: Knight
+Level: 6
+Preferred Weapon: Long sword
+
+Status
+Strength: 20
+Dexterity: 13
+Constitution: 15
+Intelligence: 13
+Wisdom: 11
+Charisma: 12
+
+Personality
+Alignment: Neutral good
+Ideals: Charity
+Flaws: Vengeful
+Features & traits: Musclebound, Polite
+Proficiencies and languages: Human language, Swordsman, Sneaky
+
+Background: A noble knight who grew up in the city of Minerva. After a betrayal by members of his family, he decided to become a wanderer, wandering the dense lands of neighboring kingdoms and helping those in need.
+
+3.
+Name: Luthien
+Race: Elf
+Class: Archer
+Level: 4
+Preferred Weapon: Bow
+
+Status
+Strength: 13
+Dexterity: 18
+Constitution: 12
+Intelligence: 14
+Wisdom: 13
+Charisma: 10
+
+Personality
+Alignment: Chaotic neutral
+Ideals: Freedom
+Flaws: Callous
+Features & traits: Cautious, Focused
+Proficiencies and languages: Farsighted, Stunts, Elf language
+
+Background: Alongside her people, Luthien promotes safety to his people, defending them from the dangers that lie outside the great walls of the elven citadel. She is determined, cunning, and her favorite hobby is teaching her brothers the art of archery.
+
+4.
+Name: Julius Greggner
+Race: Dwarf
+Class: Paladin
+Level: 5
+Preferred Weapon: Mace and Shield
+
+Status
+Strength: 17
+Dexterity: 12
+Constitution: 15 
+Intelligence: 10
+Wisdom: 16
+Charisma: 10
+
+Personality
+Alignment: Chaotic good
+Ideals: Faith, Glory
+Flaws: Once I start drinking, it's hard for me to stop.
+Features & traits: Burly, Irritable
+Proeficiencies and languages: shield surfing, Dwarf language, Human language
+
+Background:
+Julius is a seasoned warrior of the lord. His immense faith falters only when confronted with a big mug of alcohol, when he suddenly forgets whose deity’s morals he swore to uphold. If he wasn’t such a resilient drinker, he certainly would have succumbed to his vice already. With a big laugh, a big heart, and a big fucking shield, he’s always ready to enter battle to protect the weak.
+
+5.
+Name: Obyn Greenfoot
+Race: Elf
+Class: Druid
+Level: 2
+Preferred Weapon: Wooden Staff
+
+Status
+Strenght: 10
+Dexterity: 10
+Constitution: 12
+Intelligence: 13
+Wisdom: 16
+Charisma: 13
+
+Personality
+Alignment: Neutral good
+Ideals: Change, Greater Good
+Flaws: There's no room for caution in a life lived to the fullest. 
+Features & traits: Naturally beautiful
+Proficiencies and languages: Elf language
+
+Background:
+Obyn is an easy-going elf that likes to hang around greenery and live a simple life. He has no roof over his head, not a single coin to his name and not even an objective in mind. This druid generally lives in the moment. Until the forests he adores so much are threatened, that is.
+
+6.
