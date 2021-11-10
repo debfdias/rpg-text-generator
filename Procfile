@@ -1,1 +1,1 @@
-web: node backend/app.ts
+web: npm run api
