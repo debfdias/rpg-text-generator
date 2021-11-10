@@ -2,12 +2,15 @@ import { useState, FormEvent } from 'react';
 import { GiOpenChest } from "react-icons/gi";
 import Slider from '@mui/material/Slider';
 import { makeStyles } from '@mui/styles';
+import React, { useContext } from 'react';
 
 import "./styles.css";
 import axios from 'axios';
 import OriginalCharacterDataType from '../../OriginalCharacterDataType';
 
 import SliderPropertyDefinition, { ValueType } from './sliderPropertyDefinition';
+
+import { Context } from '../../Context/AuthContext';
 
 const useStyles = makeStyles({
   sliderColor: {
@@ -25,6 +28,8 @@ function ResetParams(params: SliderPropertyDefinition[]) {
 
 
 export function GenerateForm() {
+  const { handleLogin, value, setValue, personagem, setPersonagem, buttonPopup, setButtonPopup} = useContext(Context); 
+
   const classes = useStyles();
 
   const [params, setParameters]: [SliderPropertyDefinition[], any] = useState([
@@ -84,6 +89,10 @@ export function GenerateForm() {
     }).then(res => {
       console.log("ANSWER");
       console.log(res.data);
+
+      //setValue(res.data)
+	    setPersonagem([...personagem, res.data]);
+      handleLogin();
     }).catch(err => console.log(err))
     console.log("parameters values: ");
     params.forEach(param => console.log(param.name + ": " + param.value));
