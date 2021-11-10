@@ -6,7 +6,6 @@ import OriginalCharacterDataType from "../middleware/OriginalCharacterDataType";
 const path = require('path')
 
 const app = express();
-const port = 8080;
 
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, '../frontend/build')))
@@ -31,4 +30,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
   })
 
-app.listen(port, () => console.log(`Backend listening on port ${port}!`));
+app.listen(process.env.PORT || 8080, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
+});
