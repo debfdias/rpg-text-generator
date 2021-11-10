@@ -8,7 +8,7 @@ const path = require('path')
 const app = express();
 
 // Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, '../frontend/build')))
+app.use(express.static(path.join(__dirname, '../frontend/public')))
 
 app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!'));
@@ -27,7 +27,7 @@ app.get('/originalCharacter', (req, res) => {
 
 // AFTER defining routes: Anything that doesn't match what's above, send back index.html; (the beginning slash ('/') in the string is important!)
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
+    res.sendFile(path.join(__dirname + '/../frontend/public/index.html'))
   })
 
 app.listen(process.env.PORT || 8080, function(){
