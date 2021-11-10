@@ -34,7 +34,7 @@ export function GenerateForm() {
       stepValue: 0.1,
       name: "Temperature",
       type: ValueType.Temperature,
-      value: 0
+      value: 0.7
     },
     {
       minValue: 0.1,
@@ -42,7 +42,7 @@ export function GenerateForm() {
       stepValue: 0.1,
       name: "Freq penalty",
       type: ValueType.FrequencyPenalty,
-      value: 0
+      value: 0.3
     },
     {
       minValue: 100,
@@ -87,8 +87,6 @@ export function GenerateForm() {
     }).catch(err => console.log(err))
     console.log("parameters values: ");
     params.forEach(param => console.log(param.name + ": " + param.value));
-
-    ResetParams(params);
   }
 
   const loadSliders = () => {
