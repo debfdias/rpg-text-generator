@@ -48,7 +48,7 @@ export class GPTFunctions {
     }
 
     async generateOriginalCharacter(){
-        const input = await readFileSync("./inputModels/dndmodels.txt", 'utf-8');
+        const input = await readFileSync("./inputModels/dndmodelsSmall.txt", 'utf-8');
         var response = "";
         
         // Sending the request to openai
