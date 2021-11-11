@@ -84,7 +84,7 @@ export function GenerateForm() {
     //CALL API POST
     axios({
       method: "GET",
-      url: "http://localhost:8080/originalCharacter",
+      url: "https://gpt3criatividade.herokuapp.com/originalCharacter",
       params: data
     }).then(res => {
       console.log("ANSWER");
