@@ -7,7 +7,7 @@ const path = require('path')
 
 const app = express();
 
-let list_of_characters: string[];
+let list_of_characters: string[] = [];
     
 list_of_characters.push("Char 1");
 
