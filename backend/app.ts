@@ -7,6 +7,28 @@ const path = require('path')
 
 const app = express();
 
+let list_of_characters: string[];
+    
+list_of_characters.push("Char 1");
+
+list_of_characters.push("Char 2");
+
+list_of_characters.push("Char 3");
+
+list_of_characters.push("Char 4");
+
+list_of_characters.push("Char 5");
+
+list_of_characters.push("Char 6");
+
+list_of_characters.push("Char 7");
+
+list_of_characters.push("Char 8");
+
+list_of_characters.push("Char 9");
+
+list_of_characters.push("Char 10");
+
 // Serve static files from the React frontend app
 // app.use(express.static(path.join(__dirname, '../frontend/public')))
 
@@ -23,6 +45,13 @@ app.get('/originalCharacter', (req, res) => {
         res.send(result)
     });
 
+});
+
+app.get('/acervo', (req, res) => {
+    let data: OriginalCharacterDataType = <OriginalCharacterDataType><unknown>req.query;
+
+    (list_of_characters) => { res.send(list_of_characters) };
+    
 });
 
 // AFTER defining routes: Anything that doesn't match what's above, send back index.html; (the beginning slash ('/') in the string is important!)
