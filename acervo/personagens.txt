@@ -48,3 +48,22 @@ Charisma: 11
 Personality
 Alignment: Chaotic Neutral
 Ideals Acceptance, Challenge, Vengeance, Self-Improvement. \ F \ F \ F \ F \ F \ F / Flaws Honorless ("Do what I need to do") Idealistic ("I will make the world a better place."). Features & traits Disadvantages. Does not know who her mother is, because she was sold at only nine years of age by her father to pay off family debts. Pride By profession, Iruthia spends her days performing the gladiatorial arts in the pits. It has made reluctant peace with who she is because there's nothing else for this grima girl to aspire to. She was able to earn respect through battle for another member, Rydia, not for herself. Enjoys tormenting hapless prisoners to pass the time between matches. Background Before she could speak, she learned how to kill thanks to warrior's companion Charles Vodden, one of the adults charged with bringing her up after she was sold by her father. Her friendly personality keeps his bitterness at bay. He trains her strictly and gave up barbaric training techniques cut short when he noticed that they were changing his young charge for. Refuses to wear normal clothing outside the arena under guise that - as an enemy combatant kidnapped against their will - using anything else would be construed as an act of defiance or even show offiness on the field of battle regardless
+
+Name: Varian Kraak
+Race: Halfling
+Class: Rogue
+Level: 1
+Preferred Weapon: Short sword
+Status
+Strength: 9
+Dexterity: 17
+Constitution: 13
+Intelligence: 10
+Wisdom: 10
+Charisma: 15
+Personality
+Alignment: Chaotic neutral
+Ideals: Fairness, Honor, Piety
+Features & traits: Easily distracted, Observant, Curious.
+Proficiencies and languages: Human language, Stealthy.
+Background: This young halfling is very curious about the world outside his home, which prompted him to strike out on his own. He hastily learned how to be a rogue along the way in order to survive on his journeys. When he grows up, he plans to take over his family business (the tiny tavern back home) and make it twice as big. But for now Varian is still an apprentice rogue, single-mindedly devoted to learning all he can about the art of thieving. His favorite treasure? He would say it’s knowledge; everyone else would say it’s all the snacks he stole from the pantries of rich nobles. 
