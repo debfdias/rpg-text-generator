@@ -1,0 +1,50 @@
+Name: Roland
+Race: Human
+Class: Ranger
+Level: 6
+Preferred Weapon: Long sword
+Status
+Strength: 13
+Dexterity: 16
+Constitution: 14
+Intelligence: 11
+Wisdom: 10
+Charisma: 12
+Personality
+Alignment: Neutral good
+Ideals: Justice, Live and let live.
+Flaws: I speak before thinking.
+Features & traits: Fidgety, Self-reliant, Ambitious.
+Proficiencies and languages : Elf language , Quickdraw, Ambush.
+Background : A wandering adventurer with a quick wit. He's on a quest to find his father, who he lost when he was young. His father was a noble knight that protected the northern border from monsters from the great mountains of the north. On one fateful day he fell in battle against a dragon, leaving Roland alone in the world to fend for himself. Roland's greatest fear is losing someone important to him again so he lives life fighting for what he believes is right and helping anyone in need. He hopes to one day gain renown and greatness so that his family name will be remembered forever. As a ranger he is always prepared for any situation and can adapt to anything that might come his way. He was taught by the best rangers in the land that there is no such thing as an impossible mission or foe if you have enough determination and skill
+
+Name: Salamander
+Race: Lizardfolk
+Class: Barbarian
+Level: 3
+Preferred Weapon: Greataxe
+Status
+Strength: 17
+Dexterity: 12
+Constitution: 15
+Intelligence: 10
+Wisdom: 11
+Charisma: 10
+Proficiencies and languages: Human language, lizardfolk language, Berserker, Unarmed Fighter.
+Salamander is a crude man who has no qualms about getting his hands dirty. He’s not very smart or charismatic, but he’s strong and big, which makes him a force to be reckoned with in battle. Like all lizardfolk, he’s got a hard shell on his back that protects him from harm. He doesn’t wear any other armor because of this. His axe is also quite unique; it was made for him by the dwarves of MountainHammer City. It can easily cut through steel like butter!
+
+Name: Iruthia
+Race: Elf
+Class: Gladiator
+Level: 1
+Preferred Weapon: Simple weapons
+Status
+Strength: 10
+Dexterity: 19
+Constitution: 14
+Intelligence: 10
+Wisdom: 15
+Charisma: 11
+Personality
+Alignment: Chaotic Neutral
+Ideals Acceptance, Challenge, Vengeance, Self-Improvement. \ F \ F \ F \ F \ F \ F / Flaws Honorless ("Do what I need to do") Idealistic ("I will make the world a better place."). Features & traits Disadvantages. Does not know who her mother is, because she was sold at only nine years of age by her father to pay off family debts. Pride By profession, Iruthia spends her days performing the gladiatorial arts in the pits. It has made reluctant peace with who she is because there's nothing else for this grima girl to aspire to. She was able to earn respect through battle for another member, Rydia, not for herself. Enjoys tormenting hapless prisoners to pass the time between matches. Background Before she could speak, she learned how to kill thanks to warrior's companion Charles Vodden, one of the adults charged with bringing her up after she was sold by her father. Her friendly personality keeps his bitterness at bay. He trains her strictly and gave up barbaric training techniques cut short when he noticed that they were changing his young charge for. Refuses to wear normal clothing outside the arena under guise that - as an enemy combatant kidnapped against their will - using anything else would be construed as an act of defiance or even show offiness on the field of battle regardless
