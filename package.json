@@ -7,7 +7,7 @@
     "frontend": "cd frontend && npm install && npm start",
     "backend": "cd backend && npm install && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm install && npm start"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "engines": {
     "node": "14.18.1",
     "npm": "8.1.2"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0"
   }
 }
