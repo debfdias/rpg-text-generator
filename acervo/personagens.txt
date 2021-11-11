@@ -1,3 +1,141 @@
+Name: Adrian Totness
+Race: Human
+Class: Wizard (Blood mage)
+Level: 3
+Preferred Weapon: Wand, dagger
+Status
+Strength: 11
+Dexterity: 10
+Constitution: 13
+Intelligence: 17
+Wisdom: 14
+Charisma 15
+Personality Alignment : Chaotic Evil Ideals : Pride, Power Flaws : Greed, Arrogance Features & Traits : Driven, Foolish Proficiencies and languages : Cult-like fanaticism, Devious Mind Shadow language Background : Adrian trust in the rule of power above all else. He believed that by strengthening himself he paves the way towards dominance over the world. His excessive practice of alchemy has changed him forever, condensing several vials of magical fluids into his bloodstream. He's an unstable wizard who causes calamities just for his own pleasure or to break someone’s power.
+
+
+
+Name: Annabelle Ross
+Race: Human
+Class: Wizard
+Level: 3
+Preferred Weapon: Wand
+Status
+Strength: 10
+Dexterity: 13
+Constitution: 11
+Intelligence 15
+Wisdom, 14
+Charisma 13.5
+Personality
+Alignment: Good
+Ideals - Tradition, Self-Improvement
+Flaws - Ingenuity.
+Features & traits - High intelligent, but not very sociable.
+Proficiencies and languages - Human language, orc language.
+Background - Annabelle is the only daughter of a wealthy merchant in WinterHelm. She ran away from home to follow her dreams to study magic at the local mage college. There she was taught by Elsa herself. Despite being bullied for her looks, she managed to prove her worth and wits after each test, eventually becoming one of the most promising students there.
+
+
+
+Name: Ash
+Race: Human
+Class: Rogue
+Level: 5
+Preferred Weapon: Daggers
+Status
+Strength: 12
+Dexterity: 19
+Constitution: 13
+Intelligence: 12
+Wisdom: 10
+Charisma: 11
+Personality
+Alignment: Chaotic neutral
+Ideals : Honor, Free thinking.
+Flaws : Absentminded, Lightheaded.
+Features & traits : Brilliant liar, Loves to sing and dance.
+Proficiencies and languages : Rapier, Thievery, Song (Bard).
+Background : A young rogue who loves to perform at the local taverns while giving clients discreet assassinations in the night. He's good at singing and lying, but he is also very absentminded. He is on a journey to find his real family after having been adopted by some kind strangers when he was a baby.
+
+
+
+Name: Elsa
+Race: Elf
+Class: Mage
+Level: 7
+Preferred Weapon: Staff
+Status
+Strenght: 12
+Dexterity: 13
+Constitution: 12
+Intelligence: 17
+Wisdom: 15
+Charisma: 9
+Personality
+Alignment : Chaotic Good
+Ideals : Tradition, Greater Good, Self-Improvement
+Flaws : Ingenuity, Stubbornness
+Features & traits : Quiet, Intelligent. She is always calm and introspective. Also incredibly arrogant. Everyone who has studied under her have been driven away because of that. It angers her to no end that she only values herself as a mage. She has a strange liking for music. It relaxes her and gives her peace of mind. And she's a really fantastic dancer. If you ever encounter this sorceress in battle, be sure to block her ears with your hands before casting a spell against her, otherwise she'll cast a spell against you as soon as the incantation is finished singing.
+
+
+
+Name: Gabry
+Race: Human
+Class: Fighter
+Level: 3
+Preferred Weapon: Long sword
+Status
+Strength: 13
+Dexterity: 11
+Constitution: 14
+Intelligence: 10
+Wisdom: 10
+Charisma: 11
+Gender : Female
+Age : 30
+Sexual Orientation : Heterosexual
+Marital Status : Single and looking
+Occupation : Adventurer<br>Ex-guild guild member<br>Former mercenary<br>Ex-mercenary commander<br>Charlatan<br>Unemployed<br>Random adventurer<br>The call of adventure once again sounded. She has set out again to face the unknown, leaving behind her belongings and all other obligations.<br>Now she wanders, searching for one thing. A new adventure. Her goal is to find something bigger than herself.<br>Is there anything bigger than oneself? An answer to that can be found beyond the borders of this world and beyond the limits of knowledge and superstition. There is only one way to find it - try to look for yourself. <br>Gabriela wasn't always like this, though. Once upon a time she was a regular blacksmith's daughter in a village where everyone knew everyone else. But she didn't like regular things, so she tried to make other people believe she was an elf by day and a cat by night (long story). When she revealed her true identity after many years of masquerade, nobody believed her, not even her parents who had 
+lways supported every whim of their strange daughter. She had no choice but to escape from her home town for good with nothing but the clothes on her back left.<br>And so it continued until Gabriella became Gabriela - an adventurer whose name is known in many lands, small villages and big cities alike - the woman who could have easily made millions just by exploiting her looks or telling fortunes or just being beautiful. She chose the road less travelled instead.<br>So here is another one trying to find something "bigger than oneself" with no protection but what nature gives you.<br><span class="wikitable" style="font-weight: bold; color: #00cc00; background-color:#ffffcc; text-align:left"> </span><ref name="BGref">[https://bg-wiki.com/bg/Gabriela_
+
+
+
+Name: Iruthia
+Race: Elf
+Class: Gladiator
+Level: 1
+Preferred Weapon: Simple weapons
+Status
+Strength: 10
+Dexterity: 19
+Constitution: 14
+Intelligence: 10
+Wisdom: 15
+Charisma: 11
+Personality
+Alignment: Chaotic Neutral
+Ideals Acceptance, Challenge, Vengeance, Self-Improvement. \ F \ F \ F \ F \ F \ F / Flaws Honorless ("Do what I need to do") Idealistic ("I will make the world a better place."). Features & traits Disadvantages. Does not know who her mother is, because she was sold at only nine years of age by her father to pay off family debts. Pride By profession, Iruthia spends her days performing the gladiatorial arts in the pits. It has made reluctant peace with who she is because there's nothing else for this grima girl to aspire to. She was able to earn respect through battle for another member, Rydia, not for herself. Enjoys tormenting hapless prisoners to pass the time between matches. Background Before she could speak, she learned how to kill thanks to warrior's companion Charles Vodden, one of the adults charged with bringing her up after she was sold by her father. Her friendly personality keeps his bitterness at bay. He trains her strictly and gave up barbaric training techniques cut short when he noticed that they were changing his young charge for. Refuses to wear normal clothing outside the arena under guise that - as an enemy combatant kidnapped against their will - using anything else would be construed as an act of defiance or even show offiness on the field of battle regardless
+
+
+
+Name: Lylia
+Race: Elf
+Class: Wizard
+Level: 2
+Preferred Weapon: Wand
+Status
+Strength: 11
+Dexterity: 14
+Constitution: 13
+Intelligence: 15
+Wisdom: 12
+Charisma: 16
+Personality
+Alignment: Neutral good
+Ideals: Tradition, Greater Good
+Flaws: Pragmatic, Unreliable, Curious, Idealist, Prideful, Frail Features & traits: Bookworm. Proficiencies and languages :Cantrips, Wizard, Elf language. Background : Lylia has always been a reserved girl who was completely devoted to her studies. Her first encounter with the outside world wasn’t easy but it made her grow up quickly. The first time she saw a dragon she felt an incredible power rising inside of her. This is when she left for Winterhelm to learn magic. She misses her home, but she knows that this is the only way to protect the forest she cherishes so much.
+
+
+
 Name: Roland
 Race: Human
 Class: Ranger
@@ -18,6 +156,8 @@ Features & traits: Fidgety, Self-reliant, Ambitious.
 Proficiencies and languages : Elf language , Quickdraw, Ambush.
 Background : A wandering adventurer with a quick wit. He's on a quest to find his father, who he lost when he was young. His father was a noble knight that protected the northern border from monsters from the great mountains of the north. On one fateful day he fell in battle against a dragon, leaving Roland alone in the world to fend for himself. Roland's greatest fear is losing someone important to him again so he lives life fighting for what he believes is right and helping anyone in need. He hopes to one day gain renown and greatness so that his family name will be remembered forever. As a ranger he is always prepared for any situation and can adapt to anything that might come his way. He was taught by the best rangers in the land that there is no such thing as an impossible mission or foe if you have enough determination and skill
 
+
+
 Name: Salamander
 Race: Lizardfolk
 Class: Barbarian
@@ -33,21 +173,33 @@ Charisma: 10
 Proficiencies and languages: Human language, lizardfolk language, Berserker, Unarmed Fighter.
 Salamander is a crude man who has no qualms about getting his hands dirty. He’s not very smart or charismatic, but he’s strong and big, which makes him a force to be reckoned with in battle. Like all lizardfolk, he’s got a hard shell on his back that protects him from harm. He doesn’t wear any other armor because of this. His axe is also quite unique; it was made for him by the dwarves of MountainHammer City. It can easily cut through steel like butter!
 
-Name: Iruthia
-Race: Elf
-Class: Gladiator
-Level: 1
-Preferred Weapon: Simple weapons
+
+
+Name: Shira
+Race: Halfling
+Class: Rogue
+Level: 17
+Preferred Weapon: Scimitar and Shortbow
+
 Status
-Strength: 10
-Dexterity: 19
-Constitution: 14
+Strength: 19
+Dexterity: 25
+Constitution: 10
 Intelligence: 10
-Wisdom: 15
-Charisma: 11
+Wisdom: 9
+Charisma: 14 
+
 Personality
-Alignment: Chaotic Neutral
-Ideals Acceptance, Challenge, Vengeance, Self-Improvement. \ F \ F \ F \ F \ F \ F / Flaws Honorless ("Do what I need to do") Idealistic ("I will make the world a better place."). Features & traits Disadvantages. Does not know who her mother is, because she was sold at only nine years of age by her father to pay off family debts. Pride By profession, Iruthia spends her days performing the gladiatorial arts in the pits. It has made reluctant peace with who she is because there's nothing else for this grima girl to aspire to. She was able to earn respect through battle for another member, Rydia, not for herself. Enjoys tormenting hapless prisoners to pass the time between matches. Background Before she could speak, she learned how to kill thanks to warrior's companion Charles Vodden, one of the adults charged with bringing her up after she was sold by her father. Her friendly personality keeps his bitterness at bay. He trains her strictly and gave up barbaric training techniques cut short when he noticed that they were changing his young charge for. Refuses to wear normal clothing outside the arena under guise that - as an enemy combatant kidnapped against their will - using anything else would be construed as an act of defiance or even show offiness on the field of battle regardless
+Alignment: Chaotic good
+Ideals: The greater good, self-improvement. 
+Flaws: My life is a string of failures and near-death experiences, but I always bounce back! 
+Features & traits: Charming, Self-confident. 
+Proficiencies and languages: Halfling language, Thief, Sneaky. 
+
+Background: 
+Shira is a rogue with an uncanny ability to escape from any situation. In her youth she was trained by a master thief to become the best pickpocket in the world. Once she was old enough to strike out on her own, she became a freelance adventurer, stealing from evil people to give back to the poor. She hates injustice and will never leave an innocent to suffer it alone. Shira is a master of stealth and guile, who prefers to operate from the shadows. She is known for her skills in both combat and acrobatics.
+
+
 
 Name: Varian Kraak
 Race: Halfling
@@ -67,3 +219,48 @@ Ideals: Fairness, Honor, Piety
 Features & traits: Easily distracted, Observant, Curious.
 Proficiencies and languages: Human language, Stealthy.
 Background: This young halfling is very curious about the world outside his home, which prompted him to strike out on his own. He hastily learned how to be a rogue along the way in order to survive on his journeys. When he grows up, he plans to take over his family business (the tiny tavern back home) and make it twice as big. But for now Varian is still an apprentice rogue, single-mindedly devoted to learning all he can about the art of thieving. His favorite treasure? He would say it’s knowledge; everyone else would say it’s all the snacks he stole from the pantries of rich nobles. 
+
+
+
+Name: Vittorio
+Race: Human
+Class: Kitsune
+Level: 4
+Preferred Weapon: Katana
+
+Status
+Strength: 10
+Dexterity: 12
+Constitution: 11
+Intelligence: 15
+Wisdom: 13
+Charisma: 14
+
+Personality
+Alignment: Chaotic good
+Ideals: Honesty, Beauty, Love
+Flaws: I like to fight dirty. 
+Features & traits: Mischievous, Intelligent, Attractive, Charismatic.
+Favored weapon/s: Katana (Kendo), Shuriken (throwing)
+Proficiencies and languages: Kitsune language (Fox-speak) (Native), Samurai (dangerously skilled) (Proficient). Japanese language. 
+Background: A kitsune of a thousand faces with a thousand stories to tell. He likes to live the high life, roll with a bit of adventure and have fun with his friends. He is a fox with a strong moral compass, ready to assist those in need so long as they help him have a laugh along the way. His most prized possession is his katana, given to him by his father. In terms of combat skills, he has quite an advantage over most race due to his kitsune heritage. He may only be level 4 now but that's just because he's been slacking off a little recently.
+
+
+
+Name: Wills
+Race: Human
+Class: Ranger.
+Level: 3
+Preferred Weapon: Longbow
+Status 
+Strength: 11
+Dexterity: 14
+Constitution: 13 
+Intelligence: 10 
+Wisdom: 15 
+Charisma: 14 
+Personality 
+Alignment: Chaotic good
+Ideals : Tradition, Greater Good, Self-improvement. 
+Flaws : Stubborn. 
+Features & traits : Boisterous, Cautious. Proficiencies and languages : Hiding, longbows, wilderness survivalist, human language . Background : Wills grew up in the outskirts of civilization with his parents and siblings. He spent most of his days hunting game to feed his family who lived off what they could catch or grow in the ground. When his tribe was raided by a group of bandits he was left for dead after being knocked out by one of them. One night while resting in an inn he saw one of the bandits that attacked his people sit at another table with two others; there he noticed that they were all branded with the same symbol on their right arm. Unbeknownst to him at the time this symbol was the insignia of Legion; he would later learn its terrible meaning. It wasn’t long before Wills set out on an adventure to save the world from these evil men who stole everything he had ever known away from him.
