@@ -30,7 +30,7 @@ list_of_characters.push("Char 9");
 list_of_characters.push("Char 10");
 
 // Serve static files from the React frontend app
-// app.use(express.static(path.join(__dirname, '../frontend/public')))
+ app.use(express.static(path.join(__dirname, '../frontend/public')))
 
 app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!'));
