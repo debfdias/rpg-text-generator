@@ -33,7 +33,7 @@ list_of_characters.push("Char 10");
  app.use(express.static(path.join(__dirname, '../frontend/public')))
 
 app.use(cors());
-app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/../frontend/public/index.html')));
+// app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/../frontend/public/index.html')));
 
 // Returns an original character
 app.get('/originalCharacter', (req, res) => {
