@@ -8,7 +8,7 @@ const path = require('path')
 const app = express();
 
 // Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, '../frontend/public')))
+// app.use(express.static(path.join(__dirname, '../frontend/public')))
 
 app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!'));
