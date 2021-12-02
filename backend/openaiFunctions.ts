@@ -48,11 +48,21 @@ export class GPTFunctions {
     }
 
     async generateOriginalCharacter(){
-        const input = await readFileSync("./inputModels/dndmodelsSmall.txt", 'utf-8');
+        const model = await readFileSync("./inputModels/dndmodelsSmall.txt", 'utf-8');
         var response = "";
         
         // Sending the request to openai
-        response = await this.sendGPTRequest(input);
+        response = await this.sendGPTRequest(model);
+        console.log(response);
+        return response;
+    }
+
+    async generateSemiOriginalCharacter(input: string){
+        const model = await readFileSync("./inputModels/semiOriginal.txt", 'utf-8');
+        var response = "";
+        const request = model + "\n" + input;
+        // Sending the request to openai
+        response = await this.sendGPTRequest(request);
         console.log(response);
         return response;
     }

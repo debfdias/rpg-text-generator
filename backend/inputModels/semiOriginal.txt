@@ -96,29 +96,3 @@ Proficiencies and languages: Human language, orc language.
 
 Background:
 Orc mages are really uncommon, but being an ice mage has always been xerather dream. He ran off his village to go to the mage college in WinterHelm, where he studied under Elsa, the highest authority in ice magic alive. He suffered a lot of bullying there because of his appearance, but he was able to prove his worth and wits after each test.
-
-input:
-Name: Harold
-Race: Human
-Class:
-Level: 6
-Preferred Weapon: Long sword
-
-Status
-Strength: 20
-Dexterity: 13
-Constitution: 15
-Intelligence: 13
-Wisdom: 11
-Charisma: 12
-
-Personality
-Alignment: 
-Ideals: 
-Flaws: 
-Features & traits: 
-Proficiencies and languages:
-
-Background: A noble knight who grew up in the city of Minerva. After a betrayal by members of his family, he decided to become a wanderer, wandering the dense lands of neighboring kingdoms and helping those in need.
-
-output:

@@ -1,8 +1,10 @@
 import { GPTFunctions } from './openaiFunctions';
+import { processInput } from './utils';
 
 import express from "express";
 import cors from "cors";
 import OriginalCharacterDataType from "../middleware/OriginalCharacterDataType";
+import SemiOriginalCharacterDataType from "../middleware/SemiOriginalCharacterDataType";
 const path = require('path')
 
 const app = express();
@@ -46,6 +48,19 @@ app.get('/originalCharacter', (req, res) => {
     });
 
 });
+
+app.get('/semiOriginalCharacter', (req, res) => {
+
+    let data: SemiOriginalCharacterDataType = <SemiOriginalCharacterDataType><unknown>req.query;
+    let gpt = new GPTFunctions(Number(data.maxTokens), Number(data.temp), Number(data.freqPenalty));
+    let input = processInput(data);
+    var result = gpt.generateSemiOriginalCharacter(input)
+    .then((result) => {
+        res.send(result)
+    });
+
+});
+
 
 app.get('/acervo', (req, res) => {
     let data: OriginalCharacterDataType = <OriginalCharacterDataType><unknown>req.query;
