@@ -56,6 +56,7 @@ app.get('/semiOriginalCharacter', (req, res) => {
     let input = processInput(data);
     var result = gpt.generateSemiOriginalCharacter(input)
     .then((result) => {
+        //if sending as json,       call createFromString(result);
         res.send(result)
     });
 
