@@ -10,6 +10,7 @@ export function processInput(data: SemiOriginalCharacterDataType){
     input += "\nLevel: " + data.level;
     input += "\nPreferred Weapon: " + data.preferred_weapon;
 
+    input += "\n\nStatus"
     input += "\nStrength: " + data.strength;
     input += "\nDexterity: " + data.dexterity;
     input += "\nConstitution: " + data.constitution;
@@ -17,6 +18,7 @@ export function processInput(data: SemiOriginalCharacterDataType){
     input += "\nWisdom: " + data.wisdom;
     input += "\nCharisma: " + data.charisma;
 
+    input += "\n\nPersonality"
     input += "\nAlignment: " + data.alignment;
     input += "\nIdeals: " + data.ideals;
     input += "\nFlaws: " + data.flaws;
@@ -27,4 +29,30 @@ export function processInput(data: SemiOriginalCharacterDataType){
     input += "\noutput:"
 
     return input;
+}
+
+export function testProcessInput(){
+    var data: SemiOriginalCharacterDataType = new SemiOriginalCharacterDataType;
+    data.name = "Sir TestALot";
+    data.race = "Human";
+    data.class = "keyboard warrior";
+    data.level = 1337;
+    data.preferred_weapon = "keyboard";
+
+    data.strength = 11;
+    data.dexterity = 12;
+    data.constitution = 13;
+    data.intelligence = 14;
+    data.wisdom = 15;
+    data.charisma = 16;
+
+    data.alignment = "True Neutral"; 
+    data.ideals = "Likes to make everything works fine!"; 
+    data.flaws = "Sometimes can test a bit too much..."; 
+    data.features_traits = "Likes to comment the code a lot."; 
+    data.proficiencies_languages = "basic Human language, advanced Typescript and advanced Python";
+
+    data.background = "Fell down in a radioactive tank of programmer juice, and immediatly after was assigned a task to do unit testing.";
+
+    return processInput(data)
 }
