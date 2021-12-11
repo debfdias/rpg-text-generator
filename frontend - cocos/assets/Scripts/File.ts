@@ -1,10 +1,13 @@
 
 import { _decorator, Component, Node, EditBox } from 'cc';
 import SemiOriginalCharacterDataType from "../../../middleware/SemiOriginalCharacterDataType"
+import CommunicationManager from './CommunicationManager';
 const { ccclass, property } = _decorator;
  
 @ccclass('File')
 export class File extends Component {
+    @property(Node) waitingNode: Node = null;
+
     @property(EditBox) characterName: EditBox = null;
     @property(EditBox) history: EditBox = null;
 
@@ -27,11 +30,26 @@ export class File extends Component {
     @property(EditBox) features: EditBox = null;
     @property(EditBox) proficiencies: EditBox = null;
 
+    communication : CommunicationManager = null;
+
+    start() {
+        this.waitingNode.active = false;
+        this.communication = new CommunicationManager();
+    }
+
+    public onCompleteFileButton() {
+        this.waitingNode.active = true;
+        this.communication.getSemiOriginalCharacter(this.getFileContent()).then(completedCharacter => {
+            console.log(completedCharacter);
+            this.waitingNode.active = false;
+        })
+    }
+
     public getFileContent() : SemiOriginalCharacterDataType {
         return {
-            maxTokens: 0,
-            temp: 0,
-            freqPenalty: 0,
+            maxTokens: 500,
+            temp: 0.7,
+            freqPenalty: 0.3,
             name: this.characterName.string,
             race: this.race.string,
             class: this.class.string,
@@ -50,5 +68,26 @@ export class File extends Component {
             proficiencies_languages: this.proficiencies.string,
             background: this.history.string
         }
+    }
+
+    public setFileContent(content: SemiOriginalCharacterDataType)
+    {
+        this.characterName.string = content.name;
+        this.race.string = content.race;
+        this.class.string = content.class;
+        this.level.string = content.level.toString();
+        this.weapon.string = content.preferred_weapon;
+        this.str.string = content.strength.toString();
+        this.dex.string = content.dexterity.toString();
+        this.con.string = content.constitution.toString();
+        this.int.string = content.intelligence.toString();
+        this.wis.string = content.wisdom.toString();
+        this.cha.string = content.charisma.toString();
+        this.alignment.string = content.alignment;
+        this.ideals.string = content.ideals;
+        this.flaws.string = content.flaws;
+        this.features.string = content.features_traits;
+        this.proficiencies.string = content.proficiencies_languages;
+        this.history.string = content.background;
     }
 }
