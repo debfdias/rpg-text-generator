@@ -1,7 +1,53 @@
+import { isConstructorDeclaration } from "typescript";
 import SemiOriginalCharacterDataType from "../middleware/SemiOriginalCharacterDataType";
 
+export function createFromString(data: string)
+{
+    let arr = data.split("\n");
+    //remove "" strings from array
+    arr = arr.filter(e => e);
 
-export function processInput(data: SemiOriginalCharacterDataType){
+    //remove "Status" string from array
+    arr = arr.filter(function (item) {
+        return item.indexOf("Status") !== 0;
+    });
+
+    //remove "Personality" string from array
+    arr = arr.filter(function (item) {
+        return item.indexOf("Personality") !== 0;
+    });
+
+
+    let newCharacter = new(SemiOriginalCharacterDataType);
+    let types = ["name", "race", "class", "level", "preferred_weapon", "strength", 
+                 "dexterity", "constitution", "intelligence", "wisdom", "charisma",
+                 "alignment", "ideals", "flaws", "features_traits", "proficiencies_languages",
+                 "background"];
+    
+    for(let i = 0; i < arr.length; i++)
+    {
+        newCharacter = testArray(newCharacter, types[i], arr[i]);
+    }
+    return newCharacter;
+}
+
+export function testArray(character : SemiOriginalCharacterDataType, type : string, array : string)
+{   
+    let tempString = array.split(": "); 
+
+    if(typeof(tempString[1]) !== "undefined"){
+        character[type] = tempString[1];
+    }
+    else{
+        character[type] = "Not enough tokens";
+    }
+    return character;
+}
+
+export function processInput(inputData: SemiOriginalCharacterDataType){
+
+    let data: SemiOriginalCharacterDataType = removeNulls(inputData);
+
     var input: string = "input:";
 
     input += "\nName: " + data.name;
@@ -31,20 +77,81 @@ export function processInput(data: SemiOriginalCharacterDataType){
     return input;
 }
 
+function removeNulls(data: SemiOriginalCharacterDataType){
+    if (data.name == null){
+        data.name = "#";
+    }
+    if (data.race == null){
+        data.race = "#";
+    }
+    if (data.class == null){
+        data.class = "#";
+    }
+    if (data.level == null){
+        data.level = "#";
+    }
+    if (data.preferred_weapon == null){
+        data.preferred_weapon = "#";
+    }
+    
+    if (data.strength == null){
+        data.strength = "";
+    }
+    if (data.dexterity == null){
+        data.dexterity = "";
+    }
+    if (data.constitution == null){
+        data.constitution = "";
+    }
+    if (data.intelligence == null){
+        data.intelligence = "";
+    }
+    if (data.wisdom == null){
+        data.wisdom = "";
+    }
+    if (data.wisdom == null){
+        data.wisdom = "";
+    }
+    if (data.charisma == null){
+        data.charisma = "";
+    }
+
+    if (data.alignment == null){
+        data.alignment = "#";
+    }
+    if (data.ideals == null){
+        data.ideals = "#";
+    }
+    if (data.flaws == null){
+        data.flaws = "#";
+    }
+    if (data.features_traits == null){
+        data.features_traits = "#";
+    }
+    if (data.proficiencies_languages == null){
+        data.proficiencies_languages = "#";
+    }
+    if (data.background == null){
+        data.background = "#";
+    }
+
+    return data;
+}
+
 export function testProcessInput(){
     var data: SemiOriginalCharacterDataType = new SemiOriginalCharacterDataType;
     data.name = "Sir TestALot";
     data.race = "Human";
     data.class = "keyboard warrior";
-    data.level = 1337;
+    data.level = "1337";
     data.preferred_weapon = "keyboard";
 
-    data.strength = 11;
-    data.dexterity = 12;
-    data.constitution = 13;
-    data.intelligence = 14;
-    data.wisdom = 15;
-    data.charisma = 16;
+    data.strength = "11";
+    data.dexterity = "12";
+    data.constitution = "13";
+    data.intelligence = "14";
+    data.wisdom = "15";
+    data.charisma = "16";
 
     data.alignment = "True Neutral"; 
     data.ideals = "Likes to make everything works fine!"; 

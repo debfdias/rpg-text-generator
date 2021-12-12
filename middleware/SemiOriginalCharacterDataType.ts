@@ -10,15 +10,15 @@ export default class SemiOriginalCharacterDataType {
     name: string = "";
     race: string = "";
     class: string = "";
-    level: number = 0;
+    level: string = "";
     preferred_weapon: string = "";
 
-    strength: number = 0;
-    dexterity: number = 0;
-    constitution: number = 0;
-    intelligence: number = 0;
-    wisdom: number = 0;
-    charisma: number = 0;
+    strength: string = "";
+    dexterity: string = "";
+    constitution: string = "";
+    intelligence: string = "";
+    wisdom: string = "";
+    charisma: string = "";
 
     alignment: string = ""; 
     ideals: string = ""; 

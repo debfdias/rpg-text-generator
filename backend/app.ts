@@ -1,5 +1,5 @@
 import { GPTFunctions } from './openaiFunctions';
-import { processInput, testProcessInput } from './utils';
+import { createFromString, processInput, testProcessInput } from './utils';
 
 import express from "express";
 import cors from "cors";
@@ -50,13 +50,15 @@ app.get('/originalCharacter', (req, res) => {
 });
 
 app.get('/semiOriginalCharacter', (req, res) => {
-
-    let data: SemiOriginalCharacterDataType = <SemiOriginalCharacterDataType><unknown>req.query;
+    let data: SemiOriginalCharacterDataType = <SemiOriginalCharacterDataType>JSON.parse(<any>req.query.json);
     let gpt = new GPTFunctions(Number(data.maxTokens), Number(data.temp), Number(data.freqPenalty));
     let input = processInput(data);
     var result = gpt.generateSemiOriginalCharacter(input)
     .then((result) => {
-        res.send(result)
+        console.log(result);
+        let responseObject: SemiOriginalCharacterDataType = createFromString(result);
+        //res.send(JSON.stringify(responseObject));
+        res.send(responseObject);
     });
 
 });
@@ -74,7 +76,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../frontend/public/index.html'))
   })
 
-app.listen(process.env.PORT || 8080, function(){
+app.listen(process.env.PORT || 8001, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
     //console.log(testProcessInput());
 });
