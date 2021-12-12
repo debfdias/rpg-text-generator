@@ -9,7 +9,8 @@ export default class CommunicationManager {
         return new Promise((res, rej) => {
             var request = new XMLHttpRequest();
             var toQuery = JSON.stringify(toComplete);
-            request.open("GET", SERVER_URL + "/semiOriginalCharacter?json=" + toQuery, true);
+            var serverUrl = (<any>window).serverUrl ? (<any>window).serverUrl : SERVER_URL;
+            request.open("GET", serverUrl + "/semiOriginalCharacter?json=" + toQuery, true);
             request.onreadystatechange = () => {
                 if(request.readyState == request.DONE) {
                     console.log(request.responseText)
