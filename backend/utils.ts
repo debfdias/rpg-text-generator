@@ -34,12 +34,19 @@ export function createFromString(data: string)
     newCharacter["flaws"] = arr[13].split(": ")[1];
     newCharacter["features_traits"] = arr[14].split(": ")[1];
     newCharacter["proficiencies_languages"] = arr[15].split(": ")[1];
-    newCharacter["background"] = arr[16].split(": ")[1];
+    if (newCharacter["background"]){
+        newCharacter["background"] = arr[16].split(": ")[1];
+    } else {
+        newCharacter["background"] = "Not enough tokens";
+    }
 
     return newCharacter;
 }
 
-export function processInput(data: SemiOriginalCharacterDataType){    
+export function processInput(inputData: SemiOriginalCharacterDataType){
+
+    let data: SemiOriginalCharacterDataType = removeNulls(inputData);
+
     var input: string = "input:";
 
     input += "\nName: " + data.name;
@@ -67,6 +74,34 @@ export function processInput(data: SemiOriginalCharacterDataType){
     input += "\noutput:"
 
     return input;
+}
+
+function removeNulls(data){
+    if (data.level == null){
+        data.level = "";
+    }
+    if (data.strength == null){
+        data.strength = "";
+    }
+    if (data.dexterity == null){
+        data.dexterity = "";
+    }
+    if (data.constitution == null){
+        data.constitution = "";
+    }
+    if (data.intelligence == null){
+        data.intelligence = "";
+    }
+    if (data.wisdom == null){
+        data.wisdom = "";
+    }
+    if (data.wisdom == null){
+        data.wisdom = "";
+    }
+    if (data.charisma == null){
+        data.charisma = "";
+    }
+    return data;
 }
 
 export function testProcessInput(){
