@@ -10,6 +10,6 @@
     "axios": "^0.24.0"
   },
   "scripts": {
-    "start": "cd build/web-mobile && http-serve"
+    "start": "cd build/web-mobile && http-server .build -p $PORT"
   }
 }
