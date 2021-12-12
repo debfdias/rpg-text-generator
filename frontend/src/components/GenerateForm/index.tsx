@@ -50,12 +50,12 @@ export function GenerateForm() {
       value: 0.3
     },
     {
-      minValue: 100,
-      maxValue: 300,
+      minValue: 200,
+      maxValue: 500,
       stepValue: 10,
       name: "Max Tokens",
       type: ValueType.MaxToken,
-      value: 100
+      value: 300
     },
   ]);
 

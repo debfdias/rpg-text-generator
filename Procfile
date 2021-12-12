@@ -1,1 +1,1 @@
-web: npm run frontend
+web: cd "frontend - cocos" && npm start

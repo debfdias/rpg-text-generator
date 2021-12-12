@@ -124,3 +124,74 @@ Background:
 Obyn is an easy-going elf that likes to hang around greenery and live a simple life. He has no roof over his head, not a single coin to his name and not even an objective in mind. This druid generally lives in the moment. Until the forests he adores so much are threatened, that is.
 
 6.
+Name: Heigar TaintedBeard
+Race: Dwarf
+Class: Artificer
+Level: 15
+Preferred Weapon: Hammer
+
+Status
+Strength: 16
+Dexterity: 19
+Constitution: 16 
+Intelligence: 19
+Wisdom: 16
+Charisma: 20
+
+Personality
+Alignment: Chaotic Evil
+Ideals: Power, Might
+Flaws:  I will never fully trust anyone other than myself. 
+Features & traits: 
+Proficiencies and languages: Dwarf Language, Elf language
+
+Background: A classical villain. Heigar liked to make others submit to his will since he was still a dwarven child. He was the youngest boss of all time to ever live in the slums of the dwarven capital. With a general liking for trickery and ingenuity, he always makes a point to conquer his foes with well laid traps and manipulation, not with might, even though he could. 
+
+7.
+Name: Hasan Hendrick
+Race: Elf
+Class: Rogue
+Level: 3
+Preferred Weapon: Double Daggers
+
+Status
+Strength: 15
+Dexterity: 16
+Constitution: 12 
+Intelligence: 15
+Wisdom: 10
+Charisma: 12
+
+Personality
+Alignment: Lawful Evil
+Ideals: Greed, Revenge
+Flaws: I'd rather kill someone in their sleep than fight fair.
+Features & traits: Muscular, Tall, Good Acrobat
+Proficiencies and languages: Elf language, Human language, Orc language
+
+Background:
+Hasan is a fallen noble elf. The only survivor of his long burnt town. His hometown was ransacked and burnt to the ground, along with the forest around it, by an army of visceral and brutal orcs. He barely escaped alive. While fleeing, Hasam entered direct confrontation against another orc and got out victorious, but with a horrendous scar, making him forever hide his face between a mask. To this day, Hasan bears a great rage against Orcs, and a great fear of fire.
+
+8.
+Name: Johan Gomes
+Race: Demon
+Class: Mage
+Level: 6
+Preferred Weapon: Bow and Arrow
+
+Status
+Strength: 10
+Dexterity: 12
+Constitution: 14
+Intelligence: 14
+Wisdom: 11
+Charisma: 19
+
+Personality
+Alignment: chaotic neutral
+Ideals: Freedom, Independence
+Flaws: I'll say anything to avoid having to do extra work
+Features & traits: Is able to produce magic arrows.
+Proficiencies and languages: Human language, Demon language, Dwarf Language
+
+Background: Son of a demon high up on Hell's Hierarchy. Fled the underworld because he thought he was bound to a life of tedious and boring work there. He ended up liking the surface very much and swore an oath to protect the land’s tranquil and uneventful days.
