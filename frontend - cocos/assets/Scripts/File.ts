@@ -41,6 +41,7 @@ export class File extends Component {
         this.waitingNode.active = true;
         this.communication.getSemiOriginalCharacter(this.getFileContent()).then(completedCharacter => {
             console.log(completedCharacter);
+            this.setFileContent(completedCharacter);
             this.waitingNode.active = false;
         })
     }
