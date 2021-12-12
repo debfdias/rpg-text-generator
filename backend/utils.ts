@@ -1,3 +1,4 @@
+import { isConstructorDeclaration } from "typescript";
 import SemiOriginalCharacterDataType from "../middleware/SemiOriginalCharacterDataType";
 
 export function createFromString(data: string)
@@ -34,7 +35,7 @@ export function createFromString(data: string)
     newCharacter["flaws"] = arr[13].split(": ")[1];
     newCharacter["features_traits"] = arr[14].split(": ")[1];
     newCharacter["proficiencies_languages"] = arr[15].split(": ")[1];
-    if (newCharacter["background"]){
+    if (typeof(newCharacter["background"]) !== 'undefined'){
         newCharacter["background"] = arr[16].split(": ")[1];
     } else {
         newCharacter["background"] = "Not enough tokens";
