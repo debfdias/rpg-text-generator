@@ -11,6 +11,6 @@
     "http-serve": "^1.0.1"
   },
   "scripts": {
-    "start": "cd build/web-mobile && http-server .build -p $PORT"
+    "start": "cd build/web-mobile && http-serve"
   }
 }
