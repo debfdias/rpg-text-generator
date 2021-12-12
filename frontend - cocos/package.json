@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "axios": "^0.24.0"
+  },
+  "scripts": {
+    "start": "cd build/web-mobile && http-serve"
   }
 }
