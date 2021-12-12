@@ -10,6 +10,7 @@ export default class CommunicationManager {
             var request = new XMLHttpRequest();
             var toQuery = JSON.stringify(toComplete);
             var serverUrl = (<any>window).serverUrl ? (<any>window).serverUrl : SERVER_URL;
+            console.log(serverUrl);
             request.open("GET", serverUrl + "/semiOriginalCharacter?json=" + toQuery, true);
             request.onreadystatechange = () => {
                 if(request.readyState == request.DONE) {
