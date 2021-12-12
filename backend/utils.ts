@@ -21,14 +21,14 @@ export function createFromString(data: string)
     newCharacter["name"] = arr[0].split(": ")[1];
     newCharacter["race"] = arr[1].split(": ")[1];
     newCharacter["class"] = arr[2].split(": ")[1];
-    newCharacter["level"] = parseInt(arr[3].split(": ")[1]);
+    newCharacter["level"] = (arr[3].split(": ")[1]);
     newCharacter["preferred_weapon"] = arr[4].split(": ")[1];
-    newCharacter["strength"] = parseInt(arr[5].split(": ")[1]);
-    newCharacter["dexterity"] = parseInt(arr[6].split(": ")[1]);
-    newCharacter["constitution"] = parseInt(arr[7].split(": ")[1]);
-    newCharacter["intelligence"] = parseInt(arr[8].split(": ")[1]);
-    newCharacter["wisdom"] = parseInt(arr[9].split(": ")[1])
-    newCharacter["charisma"] = parseInt(arr[10].split(": ")[1]);
+    newCharacter["strength"] = (arr[5].split(": ")[1]);
+    newCharacter["dexterity"] = (arr[6].split(": ")[1]);
+    newCharacter["constitution"] = (arr[7].split(": ")[1]);
+    newCharacter["intelligence"] = (arr[8].split(": ")[1]);
+    newCharacter["wisdom"] = (arr[9].split(": ")[1])
+    newCharacter["charisma"] = (arr[10].split(": ")[1]);
     newCharacter["alignment"] = arr[11].split(": ")[1];
     newCharacter["ideals"] = arr[12].split(": ")[1];
     newCharacter["flaws"] = arr[13].split(": ")[1];
@@ -39,7 +39,7 @@ export function createFromString(data: string)
     return newCharacter;
 }
 
-export function processInput(data: SemiOriginalCharacterDataType){
+export function processInput(data: SemiOriginalCharacterDataType){    
     var input: string = "input:";
 
     input += "\nName: " + data.name;
@@ -74,15 +74,15 @@ export function testProcessInput(){
     data.name = "Sir TestALot";
     data.race = "Human";
     data.class = "keyboard warrior";
-    data.level = 1337;
+    data.level = "1337";
     data.preferred_weapon = "keyboard";
 
-    data.strength = 11;
-    data.dexterity = 12;
-    data.constitution = 13;
-    data.intelligence = 14;
-    data.wisdom = 15;
-    data.charisma = 16;
+    data.strength = "11";
+    data.dexterity = "12";
+    data.constitution = "13";
+    data.intelligence = "14";
+    data.wisdom = "15";
+    data.charisma = "16";
 
     data.alignment = "True Neutral"; 
     data.ideals = "Likes to make everything works fine!"; 
