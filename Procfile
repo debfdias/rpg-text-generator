@@ -1,1 +1,1 @@
-web: cd frontend_cocos && npm start
+web: cd "frontend - cocos" && npm start
