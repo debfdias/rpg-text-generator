@@ -1,3 +1,4 @@
+import { isConstructorDeclaration } from "typescript";
 import SemiOriginalCharacterDataType from "../middleware/SemiOriginalCharacterDataType";
 
 export function createFromString(data: string)
