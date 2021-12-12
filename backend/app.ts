@@ -1,5 +1,5 @@
 import { GPTFunctions } from './openaiFunctions';
-import { processInput, testProcessInput } from './utils';
+import { createFromString, processInput, testProcessInput } from './utils';
 
 import express from "express";
 import cors from "cors";
@@ -57,7 +57,9 @@ app.get('/semiOriginalCharacter', (req, res) => {
     var result = gpt.generateSemiOriginalCharacter(input)
     .then((result) => {
         //if sending as json,       call createFromString(result);
-        res.send(JSON.stringify(result))
+        let responseObject: SemiOriginalCharacterDataType = createFromString(result);
+        //res.send(JSON.stringify(responseObject));
+        res.send(responseObject);
     });
 
 });
