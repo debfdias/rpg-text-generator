@@ -63,7 +63,6 @@ export class GPTFunctions {
         const request = model + "\n" + input;
         // Sending the request to openai
         response = await this.sendGPTRequest(request);
-        console.log(response);
         return response;
     }
 

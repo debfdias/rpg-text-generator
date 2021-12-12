@@ -77,10 +77,23 @@ export function processInput(inputData: SemiOriginalCharacterDataType){
     return input;
 }
 
-function removeNulls(data){
-    if (data.level == null){
-        data.level = "";
+function removeNulls(data: SemiOriginalCharacterDataType){
+    if (data.name == null){
+        data.name = "#";
     }
+    if (data.race == null){
+        data.race = "#";
+    }
+    if (data.class == null){
+        data.class = "#";
+    }
+    if (data.level == null){
+        data.level = "#";
+    }
+    if (data.preferred_weapon == null){
+        data.preferred_weapon = "#";
+    }
+    
     if (data.strength == null){
         data.strength = "";
     }
@@ -102,6 +115,26 @@ function removeNulls(data){
     if (data.charisma == null){
         data.charisma = "";
     }
+
+    if (data.alignment == null){
+        data.alignment = "#";
+    }
+    if (data.ideals == null){
+        data.ideals = "#";
+    }
+    if (data.flaws == null){
+        data.flaws = "#";
+    }
+    if (data.features_traits == null){
+        data.features_traits = "#";
+    }
+    if (data.proficiencies_languages == null){
+        data.proficiencies_languages = "#";
+    }
+    if (data.background == null){
+        data.background = "#";
+    }
+
     return data;
 }
 

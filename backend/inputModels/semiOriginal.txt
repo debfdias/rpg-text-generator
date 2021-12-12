@@ -1,4 +1,4 @@
-Rpg characters:
+Rpg characters that you have to complete the information wherever there is a "#":
 
 input:
 Name: Luthien
@@ -50,25 +50,25 @@ Background: Alongside her people, Luthien promotes safety to his people, defendi
 
 input:
 Name: Xerather
-Race:
+Race: #
 Class: Ice mage
-Level: 
+Level: #
 Preferred Weapon:
 
 Status
-Strength:
-Dexterity:
-Constitution:
-Intelligence: 
-Wisdom: 
-Charisma: 
+Strength: #
+Dexterity: #
+Constitution: #
+Intelligence: #
+Wisdom: #
+Charisma: #
 
 Personality
 Alignment: Chaotic good
-Ideals: 
-Flaws: 
-Features & traits: 
-Proficiencies and languages:
+Ideals: #
+Flaws: #
+Features & traits: #
+Proficiencies and languages: #
 
 Background:
 
@@ -99,27 +99,27 @@ Orc mages are really uncommon, but being an ice mage has always been xerather dr
 
 input:
 Name: Heigar TaintedBeard
-Race: 
+Race: #
 Class: Artificer
-Level: 
+Level: #
 Preferred Weapon: Hammer
 
 Status
-Strength: 
-Dexterity: 
-Constitution:  
-Intelligence: 
-Wisdom: 
-Charisma: 
+Strength: #
+Dexterity: #
+Constitution: #
+Intelligence: #
+Wisdom: #
+Charisma: #
 
 Personality
-Alignment: 
-Ideals: 
-Flaws:  I will never fully trust anyone other than myself. 
-Features & traits: 
-Proficiencies and languages: 
+Alignment: #
+Ideals: #
+Flaws: I will never fully trust anyone other than myself. 
+Features & traits: #
+Proficiencies and languages: #
 
-Background: 
+Background: #
 
 output:
 Name: Heigar TaintedBeard
@@ -148,26 +148,26 @@ Background: A classical villain. Heigar liked to make others submit to his will 
 input:
 Name: Lorrane Boxvit
 Race: Human
-Class: 
+Class: #
 Level: 14
 Preferred Weapon: Slingshot
 
 Status
-Strength: 
-Dexterity: 
+Strength: #
+Dexterity: #
 Constitution: 13
 Intelligence: 13
-Wisdom: 
-Charisma: 
+Wisdom: #
+Charisma: #
 
 Personality
-Alignment: 
-Ideals: 
-Flaws: 
-Features & traits: 
+Alignment: #
+Ideals: #
+Flaws: #
+Features & traits: #
 Proficiencies and languages: Human language, Animal language
 
-Background: 
+Background: #
 
 output:
 Name: Lorrane Boxvit

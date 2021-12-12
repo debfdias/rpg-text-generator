@@ -50,13 +50,12 @@ app.get('/originalCharacter', (req, res) => {
 });
 
 app.get('/semiOriginalCharacter', (req, res) => {
-    console.log("Hello!");
     let data: SemiOriginalCharacterDataType = <SemiOriginalCharacterDataType>JSON.parse(<any>req.query.json);
     let gpt = new GPTFunctions(Number(data.maxTokens), Number(data.temp), Number(data.freqPenalty));
     let input = processInput(data);
     var result = gpt.generateSemiOriginalCharacter(input)
     .then((result) => {
-        //if sending as json,       call createFromString(result);
+        console.log(result);
         let responseObject: SemiOriginalCharacterDataType = createFromString(result);
         //res.send(JSON.stringify(responseObject));
         res.send(responseObject);
