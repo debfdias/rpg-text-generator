@@ -18,29 +18,29 @@ export function createFromString(data: string)
 
 
     let newCharacter = new(SemiOriginalCharacterDataType);
-    newCharacter["name"] = arr[0].split(": ")[1];
-    newCharacter["race"] = arr[1].split(": ")[1];
-    newCharacter["class"] = arr[2].split(": ")[1];
-    newCharacter["level"] = (arr[3].split(": ")[1]);
-    newCharacter["preferred_weapon"] = arr[4].split(": ")[1];
-    newCharacter["strength"] = (arr[5].split(": ")[1]);
-    newCharacter["dexterity"] = (arr[6].split(": ")[1]);
-    newCharacter["constitution"] = (arr[7].split(": ")[1]);
-    newCharacter["intelligence"] = (arr[8].split(": ")[1]);
-    newCharacter["wisdom"] = (arr[9].split(": ")[1])
-    newCharacter["charisma"] = (arr[10].split(": ")[1]);
-    newCharacter["alignment"] = arr[11].split(": ")[1];
-    newCharacter["ideals"] = arr[12].split(": ")[1];
-    newCharacter["flaws"] = arr[13].split(": ")[1];
-    newCharacter["features_traits"] = arr[14].split(": ")[1];
-    newCharacter["proficiencies_languages"] = arr[15].split(": ")[1];
-    if (newCharacter["background"]){
-        newCharacter["background"] = arr[16].split(": ")[1];
-    } else {
-        newCharacter["background"] = "Not enough tokens";
+    let types = ["name", "race", "class", "level", "preferred_weapon", "strength", 
+                 "dexterity", "constitution", "intelligence", "wisdom", "charisma",
+                 "alignment", "ideals", "flaws", "features_traits", "proficiencies_languages",
+                 "background"];
+    
+    for(let i = 0; i < arr.length; i++)
+    {
+        newCharacter = testArray(newCharacter, types[i], arr[i]);
     }
-
     return newCharacter;
+}
+
+export function testArray(character : SemiOriginalCharacterDataType, type : string, array : string)
+{   
+    let tempString = array.split(": "); 
+
+    if(typeof(tempString[1]) !== "undefined"){
+        character[type] = tempString[1];
+    }
+    else{
+        character[type] = "Not enough tokens";
+    }
+    return character;
 }
 
 export function processInput(inputData: SemiOriginalCharacterDataType){
