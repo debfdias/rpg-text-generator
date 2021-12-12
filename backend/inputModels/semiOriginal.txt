@@ -96,3 +96,99 @@ Proficiencies and languages: Human language, orc language.
 
 Background:
 Orc mages are really uncommon, but being an ice mage has always been xerather dream. He ran off his village to go to the mage college in WinterHelm, where he studied under Elsa, the highest authority in ice magic alive. He suffered a lot of bullying there because of his appearance, but he was able to prove his worth and wits after each test.
+
+input:
+Name: Heigar TaintedBeard
+Race: 
+Class: Artificer
+Level: 
+Preferred Weapon: Hammer
+
+Status
+Strength: 
+Dexterity: 
+Constitution:  
+Intelligence: 
+Wisdom: 
+Charisma: 
+
+Personality
+Alignment: 
+Ideals: 
+Flaws:  I will never fully trust anyone other than myself. 
+Features & traits: 
+Proficiencies and languages: 
+
+Background: 
+
+output:
+Name: Heigar TaintedBeard
+Race: Dwarf
+Class: Artificer
+Level: 15
+Preferred Weapon: Hammer
+
+Status
+Strength: 16
+Dexterity: 19
+Constitution: 16 
+Intelligence: 19
+Wisdom: 16
+Charisma: 20
+
+Personality
+Alignment: Chaotic Evil
+Ideals: Power, Might
+Flaws:  I will never fully trust anyone other than myself. 
+Features & traits: 
+Proficiencies and languages: Dwarf Language, Elf language
+
+Background: A classical villain. Heigar liked to make others submit to his will since he was still a dwarven child. He was the youngest boss of all time to ever live in the slums of the dwarven capital. With a general liking for trickery and ingenuity, he always makes a point to conquer his foes with well laid traps and manipulation, not with might, even though he could. 
+
+input:
+Name: Lorrane Boxvit
+Race: Human
+Class: 
+Level: 14
+Preferred Weapon: Slingshot
+
+Status
+Strength: 
+Dexterity: 
+Constitution: 13
+Intelligence: 13
+Wisdom: 
+Charisma: 
+
+Personality
+Alignment: 
+Ideals: 
+Flaws: 
+Features & traits: 
+Proficiencies and languages: Human language, Animal language
+
+Background: 
+
+output:
+Name: Lorrane Boxvit
+Race: Human
+Class: Ranger
+Level: 14
+Preferred Weapon: Slingshot
+
+Status
+Strength: 15
+Dexterity: 20
+Constitution: 13
+Intelligence: 13
+Wisdom: 13
+Charisma: 20
+
+Personality
+Alignment: Neutral good
+Ideals: Friendship, Freedom
+Flaws: I am suspicious of strangers and suspect the worst of them. 
+Features & traits: Honest, skinny
+Proficiencies and languages: Human language, Animal language
+
+Background: Born in a hole between a tavern and a sewer, was left on the trash and grew up accompanied by the lowly vermin of big cities like rats and possums. Because of her childhood in the sewers, she can see very well in the dark and talk to animals. When afflicted with poison, she is able to turn herself into a beast that is able to shoot the poise through her nails.
