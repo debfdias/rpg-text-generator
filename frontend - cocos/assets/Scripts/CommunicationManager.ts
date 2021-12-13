@@ -1,7 +1,7 @@
 import SemiOriginalCharacterDataType from "../../../middleware/SemiOriginalCharacterDataType"
 
-//var SERVER_URL = "https://gpt3criatividade.herokuapp.com";
-var SERVER_URL = "http://localhost:8080";
+var SERVER_URL = "https://gpt3criatividade.herokuapp.com";
+//var SERVER_URL = "http://localhost:8080";
 
 export default class CommunicationManager {
     public async getSemiOriginalCharacter(toComplete: SemiOriginalCharacterDataType) : Promise<SemiOriginalCharacterDataType>
