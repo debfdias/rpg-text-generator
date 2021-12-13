@@ -78,60 +78,57 @@ export function processInput(inputData: SemiOriginalCharacterDataType){
 }
 
 function removeNulls(data: SemiOriginalCharacterDataType){
-    if (data.name == null){
+    if (data.name == null || data.name == ""){
         data.name = "#";
     }
-    if (data.race == null){
+    if (data.race == null || data.race == ""){
         data.race = "#";
     }
-    if (data.class == null){
+    if (data.class == null || data.class == ""){
         data.class = "#";
     }
-    if (data.level == null){
+    if (data.level == null || data.level == ""){
         data.level = "#";
     }
-    if (data.preferred_weapon == null){
+    if (data.preferred_weapon == null || data.preferred_weapon == ""){
         data.preferred_weapon = "#";
     }
     
-    if (data.strength == null){
-        data.strength = "";
+    if (data.strength == null || data.strength == ""){
+        data.strength = "#";
     }
-    if (data.dexterity == null){
-        data.dexterity = "";
+    if (data.dexterity == null || data.dexterity == ""){
+        data.dexterity = "#";
     }
-    if (data.constitution == null){
-        data.constitution = "";
+    if (data.constitution == null || data.constitution == ""){
+        data.constitution = "#";
     }
-    if (data.intelligence == null){
-        data.intelligence = "";
+    if (data.intelligence == null || data.intelligence == ""){
+        data.intelligence = "#";
     }
-    if (data.wisdom == null){
-        data.wisdom = "";
+    if (data.wisdom == null || data.wisdom == ""){
+        data.wisdom = "#";
     }
-    if (data.wisdom == null){
-        data.wisdom = "";
-    }
-    if (data.charisma == null){
-        data.charisma = "";
+    if (data.charisma == null || data.charisma == ""){
+        data.charisma = "#";
     }
 
-    if (data.alignment == null){
+    if (data.alignment == null || data.alignment == ""){
         data.alignment = "#";
     }
-    if (data.ideals == null){
+    if (data.ideals == null || data.ideals == ""){
         data.ideals = "#";
     }
-    if (data.flaws == null){
+    if (data.flaws == null || data.flaws == ""){
         data.flaws = "#";
     }
-    if (data.features_traits == null){
+    if (data.features_traits == null || data.features_traits == ""){
         data.features_traits = "#";
     }
-    if (data.proficiencies_languages == null){
+    if (data.proficiencies_languages == null || data.proficiencies_languages == ""){
         data.proficiencies_languages = "#";
     }
-    if (data.background == null){
+    if (data.background == null || data.background == ""){
         data.background = "#";
     }
 
